@@ -1,0 +1,77 @@
+# Python
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+__pycache__
+*.pyo
+*.pyd
+*.whl
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+# pipenv
+*.env
+# pyenv
+.python-version
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+# Jupyter Notebook
+.ipynb_checkpoints
+# Environments
+.env
+.venv
+# VS Code
+.vscode/
+.history/
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# Distribution / packaging
+Python
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+__pycache__/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+# PyCharm
+.idea/
+*.iml
+out/
+# Secrets et informations sensibles
+.streamlit/secrets.toml
