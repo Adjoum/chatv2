@@ -6,6 +6,6 @@ COPY requirements.txt /requirements.txt
 
 # Install dependencies
 RUN pip install -r requirements.txt
-
+EXPOSE 8501
 # Start Streamlit
 CMD ["streamlit", "run", "--server.enableCORS", "false", "essai.py"]
