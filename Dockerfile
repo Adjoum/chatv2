@@ -1,14 +1,11 @@
-FROM python:3.12-slim
-
-# Install dependencies
-COPY requirements.txt .
-RUN pip install -r requirements.txt
+FROM streamlit/streamlit:latest
 
 # Copy Streamlit app code
-COPY . .
+COPY essai.py /essai.py
+COPY requirements.txt /requirements.txt
 
-# Expose port for Streamlit
-EXPOSE 8501
+# Install dependencies
+RUN pip install -r requirements.txt
 
 # Start Streamlit
-CMD ["streamlit", "run", "essai.py"]
+CMD ["streamlit", "run", "--server.enableCORS", "false", "essai.py"]
