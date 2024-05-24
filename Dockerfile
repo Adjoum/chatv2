@@ -1,4 +1,4 @@
-FROM streamlit/streamlit:latest
+FROM python:3.12-slim
 
 # Copy Streamlit app code
 COPY essai.py /essai.py
